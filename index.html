@@ -6,13 +6,76 @@
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1817711534988940"
      crossorigin="anonymous"></script>
+
+<style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f5f7fb;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", Arial, sans-serif;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 40px 48px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 24px;
+      font-size: 28px;
+    }
+
+    .btn {
+      display: block;
+      width: 220px;
+      margin: 12px auto;
+      padding: 14px 0;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      transition: transform 0.2s ease,
+                  box-shadow 0.2s ease,
+                  opacity 0.2s ease;
+    }
+
+    .btn-page1 {
+      background: linear-gradient(135deg, #4f8cff, #6fa8ff);
+    }
+
+    .btn-page2 {
+      background: linear-gradient(135deg, #ff7a7a, #ff9a9a);
+    }
+
+    .btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+      opacity: 0.95;
+    }
+
+    .btn:active {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.18);
+    }
+  </style>
+  
 </head>
 <body>
-  <h1>Welcome</h1>
+    <div class="card">
+  <h1>Welcome to Nika's Index</h1>
 
   <p>
-    <a href="ComboGame/">FuwaFuwaCombo</a><br>
-    <a href="life-values-sorter/">life-values-sorter</a>
+    <a class="btn btn-page1" href="ComboGame/">FuwaFuwaCombo</a><br>
+    <a class="btn btn-page2" href="life-values-sorter/">Life-values-sorter</a>
   </p>
 </body>
 </html>
