@@ -1,82 +1,245 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
   <meta charset="UTF-8">
-  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nika的創意實驗室 | 作品集與小遊戲</title>
+  <meta name="description" content="包含個人製作的 Web 小遊戲、實用小工具以及插畫作品集。">
+  <link rel="stylesheet" href="style.css">
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1817711534988940"
-     crossorigin="anonymous"></script>
-
-<style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #f5f7fb;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont,
-                   "Segoe UI", Arial, sans-serif;
-    }
-
-    .card {
-      background: #ffffff;
-      padding: 40px 48px;
-      border-radius: 20px;
-      text-align: center;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-    }
-
-    h1 {
-      margin-top: 0;
-      margin-bottom: 24px;
-      font-size: 28px;
-    }
-
-    .btn {
-      display: block;
-      width: 220px;
-      margin: 12px auto;
-      padding: 14px 0;
-      border-radius: 999px;
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: 600;
-      color: #fff;
-      transition: transform 0.2s ease,
-                  box-shadow 0.2s ease,
-                  opacity 0.2s ease;
-    }
-
-    .btn-page1 {
-      background: linear-gradient(135deg, #4f8cff, #6fa8ff);
-    }
-
-    .btn-page2 {
-      background: linear-gradient(135deg, #ff7a7a, #ff9a9a);
-    }
-
-    .btn:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 24px rgba(0,0,0,0.2);
-      opacity: 0.95;
-    }
-
-    .btn:active {
-      transform: translateY(-1px);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.18);
-    }
-  </style>
-  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1817711534988940"
+    crossorigin="anonymous"></script>
 </head>
-<body>
-    <div class="card">
-  <h1>Welcome to Nika's Index</h1>
 
-  <p>
-    <a class="btn btn-page1" href="ComboGame/">FuwaFuwaCombo</a><br>
-    <a class="btn btn-page2" href="life-values-sorter/">Life-values-sorter</a>
-  </p>
+<body>
+
+  <!-- Banner -->
+  <header class="hero-banner">
+    <div class="container">
+      <h1 class="hero-title">Nika的創意實驗室</h1>
+      <p class="hero-subtitle">小遊戲、工具開發與插畫創作</p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Mini Games Gallery -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">趣味小遊戲</h2>
+      </div>
+
+      <div class="gallery-container">
+        <div class="gallery-scroll">
+
+          <!-- Game A -->
+          <article class="game-card">
+            <div class="card-image" style="background: #a5b4fc;">
+              <img src="assets/thumb_a.jpg" alt="Fuwavity">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Fuwavity</h3>
+              <p class="card-desc">可愛的Fuwa會互相吸引，進化為更大的Fuwa。</p>
+              <a href="https://nika-deltah.github.io/Fuwavity/" class="btn btn-primary btn-full">開始遊戲</a>
+            </div>
+          </article>
+
+          <!-- Game B -->
+          <article class="game-card">
+            <div class="card-image" style="background: #818cf8;">
+              <img src="assets/thumb_b.jpg" alt="Classic Pinball">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Classic Pinball</h3>
+              <p class="card-desc">懷舊的古早味彈珠台，快來收集獎品吧！</p>
+              <a href="#" class="btn btn-primary btn-full">開始遊戲</a>
+            </div>
+          </article>
+
+          <!-- Game C -->
+          <article class="game-card">
+            <div class="card-image" style="background: #6366f1;">
+              <img src="assets/thumb_c.jpg" alt="Pizza Unity">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Pizza Unity</h3>
+              <p class="card-desc">點擊空位把相同的披薩湊成完整披薩的益智遊戲！</p>
+              <a href="https://primategames.itch.io/pizzaunity" class="btn btn-secondary btn-full">開始遊戲</a>
+              <a href="https://apps.apple.com/jp/app/pizza-unity/id6748722095" class="btn btn-secondary btn-full">App
+                Store</a>
+            </div>
+          </article>
+
+          <!-- Game D (Placeholder) -->
+          <article class="game-card">
+            <div class="card-image" style="background: #4b4dc9;"></div>
+            <div class="card-content">
+              <h3 class="card-title">Coming Soon</h3>
+              <p class="card-desc">更多有趣的遊戲正在開發中…</p>
+              <a href="#" class="btn btn-secondary btn-full">敬請期待</a>
+            </div>
+          </article>
+
         </div>
+      </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">實用小工具</h2>
+      </div>
+
+      <div class="tools-grid">
+        <!-- Tool A -->
+        <article class="tool-card">
+          <h3 class="card-title">我的生涯價值排行榜</h3>
+          <p class="card-desc">很適合生涯和職涯探索的免費小工具！</p>
+          <a href="https://nika-deltah.github.io/life-values-sorter/" class="btn btn-secondary btn-full">開始使用</a>
+        </article>
+
+        <!-- Tool B -->
+        <article class="tool-card">
+          <h3 class="card-title">Coming Soon</h3>
+          <p class="card-desc">更多實用的工具正在開發中…</p>
+          <a href="#" class="btn btn-secondary btn-full">敬請期待</a>
+        </article>
+
+        <!-- Tool C (Placeholder) 
+          <article class="tool-card">
+          <h3 class="card-title">工具 C</h3>
+          <p class="card-desc">協助生成特定格式文本的產生器。</p>
+          <a href="#" class="btn btn-secondary btn-full">敬請期待</a>
+          </article>-->
+      </div>
+    </section>
+
+    <!-- Illustration Portfolio -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">插畫作品集</h2>
+      </div>
+
+      <p style="margin-bottom: 32px; color: var(--text-secondary); max-width: 800px;">
+        擅長日系明亮、可愛的風格，也能繪製精緻的物品與像素藝術。<br>接受純文字設定、真人照片轉繪及服裝設計服務（皆需額外加價）。
+      </p>
+
+      <div class="portfolio-grid">
+        <!-- Illustration Type A -->
+        <div class="portfolio-item">
+          <div class="portfolio-thumb"></div>
+          <div>
+            <h3 class="card-title">各式插圖</h3>
+            <p class="card-desc">各式包含背景或純色背景插圖。<br>適合 MV 曲繪、封面縮圖、網站橫幅、實體卡片或宣傳海報。</p>
+          </div>
+        </div>
+
+        <!-- Illustration Type B -->
+        <div class="portfolio-item">
+          <div class="portfolio-thumb"></div>
+          <div>
+            <h3 class="card-title">人物立繪</h3>
+            <p class="card-desc">從頭像、半身到全身。<br>適合 TRPG、VTuber、PNGTuber 或遊戲立繪。</p>
+          </div>
+        </div>
+
+        <!-- Illustration Type C -->
+        <div class="portfolio-item">
+          <div class="portfolio-thumb"></div>
+          <div>
+            <h3 class="card-title">Q版插圖</h3>
+            <p class="card-desc">可愛活潑的SD比例。<br>適合周邊商品、LINE 貼圖、聊天室貼圖。</p>
+          </div>
+        </div>
+
+        <!-- Illustration Type D (Pixel Art) -->
+        <div class="portfolio-item">
+          <div class="portfolio-thumb"></div>
+          <div>
+            <h3 class="card-title">像素藝術</h3>
+            <p class="card-desc">Q版人物或物品。<br>適合復古風格周邊、2D 遊戲素材。</p>
+          </div>
+        </div>
+
+        <!-- Illustration Type E (Surprise) -->
+        <div class="portfolio-item">
+          <div class="portfolio-thumb"></div>
+          <div>
+            <h3 class="card-title">驚喜包</h3>
+            <p class="card-desc">預算有限的好選擇。<br>自由發揮、無修改、可能包含雜線。</p>
+          </div>
+        </div>
+
+        <!-- Illustration Type F (Template) -->
+        <div class="portfolio-item">
+          <div class="portfolio-thumb"></div>
+          <div>
+            <h3 class="card-title">模板委託</h3>
+            <p class="card-desc">快速出圖首選。<br>使用固定構圖模板，僅替換為您的角色。</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Commission & Sponsorship -->
+    <section class="section">
+      <div class="support-section">
+        <h2>委託與贊助</h2>
+        <p style="margin-top: 16px; color: var(--text-secondary);">
+          喜歡Nika的作品嗎？歡迎透過以下方式支持我，或進行委託。
+        </p>
+
+        <div class="support-actions">
+          <!-- Commission Form -->
+          <a href="https://docs.google.com/forms" target="_blank" class="btn btn-google">
+            📝 填寫委託 Google 表單
+          </a>
+
+          <!-- ECPay / Green World -->
+          <a href="#" target="_blank" class="btn btn-ecpay">
+            🌱 綠界贊助 (ECPay)
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <!-- AdSense Slot Placeholder -->
+      <div class="ad-slot">
+        <!-- 
+           Google AdSense 廣告單元程式碼放在這裡 
+           舉例：
+           <ins class="adsbygoogle" ...></ins>
+           <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        -->
+        [ 廣告版位 reserved for Google Ads ]
+      </div>
+
+      <p>© 2026 My Name. All rights reserved.</p>
+
+      <div class="footer-links">
+        <a href="https://twitter.com/deltah_twi" target="_blank">X (Twitter)</a>
+        <a href="https://plurk.com/deltah" target="_blank">Plurk</a>
+        <!-- 使用 mailto links 請注意隱私風險，建議使用表單 -->
+        <a href="mailto:monica.deltah@gmail.com">聯絡我 (Mail)</a>
+      </div>
+
+      <div class="legal-links">
+        <a href="privacy.html">隱私權政策</a>
+        <span style="margin: 0 8px;">|</span>
+        <a href="terms.html">使用條款</a>
+      </div>
+
+    </div>
+  </footer>
+
 </body>
+
 </html>
